@@ -24,15 +24,15 @@ const Allcard: FC<{ alleproductdata: oneProductType }> = ({ alleproductdata }) =
     <Link href={`/Cataloge/${alleproductdata.slug.current}`}>
       <div className=''>
       <div className='mb-1'>
-      <Image  width={300}height={150} src={urlFor(alleproductdata.image[0]).width(1000).height(1000).url()} alt={alleproductdata.name} />
+      <Image src={urlFor(alleproductdata.image[0]).url()}width={300} height={150} alt={''} />
              
         </div>
 
         <div>
         <h1 className='  font-bold'> <span className=' font-normal text-gray-400'>category:</span> {alleproductdata.category} 
         </h1>
-    <h1 className='text-2xl pt-1   leading-none text-gray-600 '>{alleproductdata.tags}</h1>
-    <h1 className='font-bold pt-1 leading-6 text-3xl tracking-tight text-gray-800'>${alleproductdata.price}</h1>
+    <h1 className='text-lg pt-1   leading-none text-gray-600 '>{alleproductdata.tags}</h1>
+    <h1 className='font-bold pt-1 leading-6 text-lg tracking-tight text-gray-800'> price: ${alleproductdata.price}</h1>
   
        
         </div>

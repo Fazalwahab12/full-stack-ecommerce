@@ -36,7 +36,7 @@ const Productcursel: FC = () => {
         <h2 className='text-4xl font-bold mb-4 sm:px-10'>Check What We Have</h2>
       </header>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={0}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
@@ -44,21 +44,22 @@ const Productcursel: FC = () => {
         breakpoints={{
           640: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 0,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 0,
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 0,
           },
         }}
       >
+       
         {productData.map((item: oneProductType, index: number) => (
-          <SwiperSlide key={index}>
-            <Card singleproductdata={item} />
+          <SwiperSlide key={index} className=' mt-24'>
+            <Card singleproductdata ={item} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -67,10 +68,3 @@ const Productcursel: FC = () => {
 };
 
 export default Productcursel;
-
-
-
-
-
-
-
