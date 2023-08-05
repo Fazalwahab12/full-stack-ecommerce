@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import hero from '../../../public/header.webp'
+import hero from '../../../public/fas.png'
 import Featured1 from '../../../public/future/Featured1.webp'
 import Featured2 from '../../../public/future/Featured2.webp'
 import Featured3 from '../../../public/future/Featured3.webp'
@@ -44,8 +44,8 @@ const Hero = () => {
         </div>
         
         <div className="  ">
-          <div className=" bg-[#ffece3] rounded-full  sm:hidden md:block ">
-            <Image src={hero} alt="Product Image" className='' width={700} height={500} />
+          <div className=" bg-[#ffece3] rounded-full  sm:hidden md:block  ">
+            <Image src={hero} alt="Product Image" className=' pt-4' width={700} height={500} />
           </div>
         </div>
         
