@@ -173,7 +173,7 @@ function CartPage() {
               {cart.map((items) => (
                 <div className='flex gap-6' key={items._id}>
                   <div className='mb-1'>
-                    <Image src={urlFor(items.image).width(300).height(300).url()} alt={''} />
+                  <Image src={urlFor(items.image).url()}width={300} height={300} alt={''} />
                   </div>
                   <div>
                     <div className='gap-8'>

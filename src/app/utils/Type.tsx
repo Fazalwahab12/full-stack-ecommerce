@@ -2,7 +2,6 @@
 
 
 
-
 export interface Asset {
   _ref: string;
   _type: string;
@@ -20,7 +19,6 @@ export interface ImageType {
 }
 
 export interface oneProductType {
-  [x: string]: any;
   _createdAt: string;
   _id: string;
   slug: Slugtype;
