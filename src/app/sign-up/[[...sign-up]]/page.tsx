@@ -5,7 +5,9 @@ export default function SignUpPage() {
   return(
     <div>
         <Wreper>
-     <div> <SignUp />;</div>
+     <div> <SignUp />
+     
+     </div>
     </Wreper>
     </div>
   

@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.min.css';
 import { oneProductType } from "../utils/Type";
 import Card from '../utils/Card';
 import Wreper from './Wreper';
-import Allcard from '../utils/Allcard';
+
 
 
 const Productcursel: FC = () => {
